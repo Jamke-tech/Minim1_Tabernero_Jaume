@@ -51,20 +51,20 @@ public class Main {
         StaticHttpHandler staticHttpHandler = new StaticHttpHandler("./public/");
         server.getServerConfiguration().addHttpHandler(staticHttpHandler, "/");
 
-        /*System.out.println(String.format("Jersey app started with WADL available at "
+        System.out.println(String.format("Jersey app started with WADL available at "
                 + "%sapplication.wadl\nHit enter to stop it...", BASE_URI));
 
         System.in.read();
-        server.stop();*/
+        server.stop();
 
 
-        String swagger_uri = BASE_URI;
+        /*String swagger_uri = BASE_URI;
         String target = "Minim1";
         String replacement = "swagger";
         swagger_uri = swagger_uri.replace(target, replacement);
         System.out.println(String.format("RestApi Started at " + "%s\nHit enter to stop it...", swagger_uri));
         System.in.read();
-        server.shutdownNow();
+        server.shutdownNow();*/
     }
 }
 

@@ -103,8 +103,6 @@ public class Covid19ManagerService {
         else{
             return Response.status(201).build();
         }
-
-
     }
     @PUT
     @ApiOperation(value = "Procesar Muestra de lab", notes = "Nos procesa muestra del lab con id X")
